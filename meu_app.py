@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Meu Site Streamlit")
+st.set_page_config(page_title="Meu Site Streamlit com python")
 
 with st.container():
     st.subheader("Meu primeiro site com o Streamlit")
