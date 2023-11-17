@@ -5,8 +5,8 @@ https://www.youtube.com/watch?v=9mnNSMCu3dI&t=52s
 Conectando ao banco de dados com python | Streamlit #2
 https://www.youtube.com/watch?v=lOyCICREgy8
 
-
-
+Consultando em Python os cadastros no banco de dados | Streamlit #3
+https://www.youtube.com/watch?v=J0KxfZEPrDI
 
 
 from datetime import date
