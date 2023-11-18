@@ -1,23 +1,18 @@
 import streamlit as st
 import Controllers.clienteController as clienteController
-import Models.cliente as usuario
+from Models import cliente
+
 
 def cadastrar():
-    st.title("Cadastro de Usuário")
+    st.title('Cadastrar')
     with st.form(key="cadastrar_usuario"):
         nome_usuario = st.text_input(label="Digite o nome")
         email_usuario = st.text_input(label="Digite o email")
         senha_usuario = st.text_input(label="Digite o senha")
-        ocupacao = st.selectbox("Selecione Aluno ou Professor",["Aluno","Professor","Admin"])
+        ocupacao = st.selectbox("Selecione Aluno, Professor ou Admin",["Aluno","Professor","Admin"])
         dt_cadastro = st.date_input(label="Data do Cadastro:")
         enviar = st.form_submit_button("Enviar", type="primary")
 
     if enviar:
-        usuario.nome_usuario = nome_usuario
-        usuario.email_usuario = email_usuario
-        usuario.senha_usuario = senha_usuario
-        usuario.ocupacao = ocupacao
-        usuario.dt_cadastro = dt_cadastro
-
-        clienteController.cadastrar(usuario)
+        clienteController.cadastrar(cliente.Cliente(0,nome_usuario,email_usuario,senha_usuario,ocupacao,dt_cadastro))
         st.success("Cadastro realizado com sucesso!")
