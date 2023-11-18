@@ -1,4 +1,4 @@
-import datetime as date
+
 class Cliente:
     def __init__(self, id, nome_usuario, email_usuario, senha_usuario, ocupacao, dt_cadastro):
         self.id = id
