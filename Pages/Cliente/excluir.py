@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def excluir(id):
-    st.title('Menu :red[Excluir] :sunglasses:')
+    st.title(':red[Excluir Usuarios] :wastebasket:')
     with st.form(key="excluir_usuario"):
         id = st.text_input(label="Insira o Id a ser excluido:")
         btExcluir = st.form_submit_button("Excluir", type="primary")

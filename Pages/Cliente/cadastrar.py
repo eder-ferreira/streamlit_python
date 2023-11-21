@@ -4,7 +4,7 @@ from Models import cliente
 
 
 def cadastrar():
-    st.title('Cadastrar')
+    st.title(':blue[Cadastrar Usuarios] :computer:')
     with st.form(key="cadastrar_usuario"):
         nome_usuario = st.text_input(label="Digite o nome")
         email_usuario = st.text_input(label="Digite o email")

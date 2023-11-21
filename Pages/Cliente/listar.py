@@ -4,8 +4,7 @@ import pandas as pd
 
 
 def listar():
-
-    st.title('Listar Usuarios')
+    st.title(':blue[Listar Usuarios] :page_facing_up:')
     with st.form(key="listar_usuario"):
          userListe = []
 
