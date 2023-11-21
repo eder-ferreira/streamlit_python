@@ -1,6 +1,6 @@
 import streamlit as st      # BIBLIOTECA CONSTRUIR OS DASHBOARD
 import pandas as pd         # BIBLIOTECA MANIPULAÇÃO DE DADOS
-import plotly.express as px # BIBLIOTECA CONSTRUIR OS GRAFICOS
+# import plotly.express as px # BIBLIOTECA CONSTRUIR OS GRAFICOS
 import Controllers.clienteController as clienteController
 
 
